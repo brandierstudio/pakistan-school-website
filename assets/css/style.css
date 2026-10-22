@@ -1,0 +1,265 @@
+/* ==========================================================================
+   PAKISTAN SCHOOL — CUSTOM PREMIUM STYLESHEET
+   Authentic institutional design with real-world website buttons & typography.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+  --primary-navy: #0D274D;
+  --secondary-royal: #1E5E9E;
+  --accent-green: #006633;
+  --sky-blue: #64B5F6;
+  --gold-accent: #D97706;
+  --surface-light: #F8FAFC;
+  --dark-slate: #0F172A;
+  --border-subtle: #E2E8F0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--dark-slate);
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-royal);
+}
+
+/* Header & Navigation */
+.header-scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 16px -2px rgba(13, 39, 77, 0.08);
+}
+
+/* ==========================================================================
+   REAL WEBSITE BUTTONS DESIGN SYSTEM (Inspired by modern professional sites)
+   ========================================================================== */
+.btn-real {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.6875rem 1.375rem;
+  border-radius: 0.625rem; /* 10px natural curve */
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+}
+.btn-real:active {
+  transform: scale(0.98);
+}
+
+/* Primary Navy Button */
+.btn-navy {
+  background-color: #0D274D;
+  color: #FFFFFF !important;
+  border: 1px solid #081a36;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(13, 39, 77, 0.2);
+}
+.btn-navy:hover {
+  background-color: #133566;
+  box-shadow: 0 4px 8px -1px rgba(13, 39, 77, 0.25), 0 2px 4px -2px rgba(13, 39, 77, 0.15);
+}
+
+/* Emerald Green Button (Admissions / Action) */
+.btn-emerald {
+  background-color: #006633;
+  color: #FFFFFF !important;
+  border: 1px solid #004d26;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 102, 51, 0.25);
+}
+.btn-emerald:hover {
+  background-color: #007a3d;
+  box-shadow: 0 4px 8px -1px rgba(0, 102, 51, 0.3), 0 2px 4px -2px rgba(0, 102, 51, 0.2);
+}
+
+/* Royal Blue Button */
+.btn-royal {
+  background-color: #1E5E9E;
+  color: #FFFFFF !important;
+  border: 1px solid #164879;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(30, 94, 158, 0.25);
+}
+.btn-royal:hover {
+  background-color: #246fb8;
+  box-shadow: 0 4px 8px -1px rgba(30, 94, 158, 0.3);
+}
+
+/* Secondary White Button with crisp border */
+.btn-white {
+  background-color: #FFFFFF;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.btn-white:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+  color: #0D274D !important;
+}
+
+/* Transparent Outline Button for Dark Backgrounds */
+.btn-outline-white {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   LIQUID GLASS DESIGN SYSTEM (Frosted glassmorphism with subtle shimmer)
+   ========================================================================== */
+.glass-liquid {
+  background: rgba(255, 255, 255, 0.14) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.35) !important;
+}
+
+.glass-liquid-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.32) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  border-radius: 0.625rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.glass-liquid-btn:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.65) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  color: #FFFFFF !important;
+}
+.glass-liquid-btn:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================================================
+   PAGE ENTRANCE ANIMATIONS (Smooth, subtle & hardware accelerated)
+   ========================================================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.anim-fade-up {
+  animation: fadeInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.anim-delay-1 {
+  animation-delay: 0.12s;
+}
+.anim-delay-2 {
+  animation-delay: 0.24s;
+}
+.anim-delay-3 {
+  animation-delay: 0.36s;
+}
+.anim-fade-right {
+  animation: fadeInRight 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+.anim-float {
+  animation: gentleFloat 4.5s ease-in-out infinite;
+}
+
+/* Card Hover Transitions */
+.hover-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -4px rgba(13, 39, 77, 0.08);
+}
+
+/* Transparent Logo Enhancements */
+.site-logo {
+  filter: drop-shadow(0 2px 4px rgba(13, 39, 77, 0.15));
+}
+.site-logo-header {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+.site-logo-nav {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+.site-logo-footer {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+.site-logo-hero {
+  height: 84px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+}

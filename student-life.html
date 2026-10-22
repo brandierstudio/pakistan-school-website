@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life & Co-Curriculars — Pakistan School | Aram Bagh, Karachi</title>
+  <meta name="description" content="Discover vibrant student life at Pakistan School: sports, robotics clubs, debating societies, Quranic Qirat, arts, and pastoral care.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 800: '#132C54', 900: '#0D274D', 950: '#081730' },
+            royal: { 500: '#2570BE', 600: '#1E5E9E', 700: '#184D82' },
+            pkGreen: { DEFAULT: '#006633', dark: '#004D26', light: '#0A8747' },
+            skyBrand: { 300: '#90CAF9', 400: '#64B5F6', 500: '#42A5F5' }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-skyBrand-400 selection:text-navy-900">
+
+  <!-- Header -->
+  <header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center shrink-0 py-1" title="Pakistan School">
+          <img src="assets/images/logo.png" alt="Pakistan School" class="h-12 sm:h-14 w-auto object-contain transition-transform hover:scale-105">
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-slate-700">
+          <a href="index.html" class="hover:text-royal-600 transition-colors">Home</a>
+          <a href="about.html" class="hover:text-royal-600 transition-colors">About</a>
+          <a href="academics.html" class="hover:text-royal-600 transition-colors">Academics</a>
+          <a href="admissions.html" class="hover:text-royal-600 transition-colors">Admissions</a>
+          <a href="facilities.html" class="hover:text-royal-600 transition-colors">Campus</a>
+          <a href="faculty.html" class="hover:text-royal-600 transition-colors">Faculty</a>
+          <a href="student-life.html" class="text-royal-600 font-bold border-b-2 border-royal-600 pb-1">Student Life</a>
+          <a href="news.html" class="hover:text-royal-600 transition-colors">News & Events</a>
+          <a href="contact.html" class="hover:text-royal-600 transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-2.5 xl:gap-3 shrink-0">
+          <a href="resources.html" class="btn-real btn-white text-xs whitespace-nowrap">Parent Portal</a>
+          <a href="admissions.html" class="btn-real btn-emerald text-xs gap-1.5 whitespace-nowrap">
+            <span>Apply Now</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-backdrop" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-full max-w-xs h-full bg-white shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Logo" class="h-9 w-auto">
+        <span class="font-heading font-extrabold text-navy-900 text-lg">Pakistan School</span>
+      </div>
+      <button id="mobile-close-btn" class="p-2 text-slate-500 hover:text-slate-800"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <nav class="flex flex-col gap-2 mt-6 text-base font-semibold text-slate-700">
+      <a href="index.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Home</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">About</a>
+      <a href="academics.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Academics</a>
+      <a href="admissions.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Admissions 2026</a>
+      <a href="facilities.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Campus Facilities</a>
+      <a href="faculty.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Faculty Directory</a>
+      <a href="student-life.html" class="px-3 py-2 rounded-lg bg-royal-50 text-royal-600 font-bold">Student Life</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Photo Gallery</a>
+      <a href="news.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">News & Events</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-navy-950 via-navy-900 to-royal-800 text-white py-16 lg:py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+        Holistic Development
+      </span>
+      <h1 class="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight">
+        Student Life & Co-Curriculars
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        Education extends far beyond textbooks. We build character, sportsmanship, and leadership through active student clubs, athletics, and cultural competitions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Clubs & Societies Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+        <h2 class="font-heading text-3xl font-extrabold text-navy-900">Student Clubs & Societies</h2>
+        <p class="text-slate-600 text-sm">Every Friday afternoon is dedicated to passionate student-led co-curricular activities.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover-card space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-royal-100 text-royal-700 flex items-center justify-center">
+            <i data-lucide="mic" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-navy-900">Debating & Declamation Society</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Parliamentary debate styles, Model UN simulations, and Urdu declamation competitions developing razor-sharp rhetoric and poise.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover-card space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-navy-900">Robotics & Innovators Club</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Hands-on construction of motorized models, sensor line-follower vehicles, and preparation for national science olympiads.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover-card space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+            <i data-lucide="book-open" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-navy-900">Quranic Recitation & Qirat Circle</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Mastering classical maqamat of Tajweed recitation under the personal tutelage of certified international Qaris.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover-card space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center">
+            <i data-lucide="pen-tool" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-navy-900">Islamic Calligraphy & Visual Arts</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Exploring traditional Thuluth and Nastaliq scripts alongside modern acrylic painting, sketch craft, and pottery.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover-card space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center">
+            <i data-lucide="trophy" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-navy-900">Athletics, Cricket & Table Tennis</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Physical conditioning, structured inter-house cricket tournaments, badminton leagues, and martial arts taekwondo sessions.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover-card space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center">
+            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-xl text-navy-900">Community Outreach & Red Crescent</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Youth volunteer drives, tree plantation around historic downtown Karachi, first-aid training, and local welfare visits.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Logo" class="site-logo-footer site-logo">
+        <span class="font-heading font-bold text-white text-sm">Pakistan School • Aram Bagh Campus, Karachi</span>
+      </div>
+      <div>© 2026 Pakistan School. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

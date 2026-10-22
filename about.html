@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Pakistan School — Aram Bagh Campus, Karachi | History, Vision & Philosophy</title>
+  <meta name="description" content="Learn about Pakistan School (Est. 2026) in Aram Bagh, Karachi. Our vision, leadership, Islamic character foundation, and educational philosophy.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 800: '#132C54', 900: '#0D274D', 950: '#081730' },
+            royal: { 500: '#2570BE', 600: '#1E5E9E', 700: '#184D82' },
+            pkGreen: { DEFAULT: '#006633', dark: '#004D26', light: '#0A8747' },
+            skyBrand: { 300: '#90CAF9', 400: '#64B5F6', 500: '#42A5F5' }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-skyBrand-400 selection:text-navy-900">
+
+  <!-- Announcement Bar -->
+  <div class="bg-navy-950 text-white text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <span>Admissions Open for 2026–2027 Academic Session • Aram Bagh, Karachi</span>
+      <a href="tel:+922132620026" class="hover:text-skyBrand-400 font-semibold">(021) 3262-0026</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center shrink-0 py-1" title="Pakistan School">
+          <img src="assets/images/logo.png" alt="Pakistan School" class="h-12 sm:h-14 w-auto object-contain transition-transform hover:scale-105">
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-slate-700">
+          <a href="index.html" class="hover:text-royal-600 transition-colors">Home</a>
+          <a href="about.html" class="text-royal-600 font-bold border-b-2 border-royal-600 pb-1">About</a>
+          <a href="academics.html" class="hover:text-royal-600 transition-colors">Academics</a>
+          <a href="admissions.html" class="hover:text-royal-600 transition-colors">Admissions</a>
+          <a href="facilities.html" class="hover:text-royal-600 transition-colors">Campus</a>
+          <a href="faculty.html" class="hover:text-royal-600 transition-colors">Faculty</a>
+          <a href="student-life.html" class="hover:text-royal-600 transition-colors">Student Life</a>
+          <a href="news.html" class="hover:text-royal-600 transition-colors">News & Events</a>
+          <a href="contact.html" class="hover:text-royal-600 transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-2.5 xl:gap-3 shrink-0">
+          <a href="resources.html" class="btn-real btn-white text-xs whitespace-nowrap">Parent Portal</a>
+          <a href="admissions.html" class="btn-real btn-emerald text-xs gap-1.5 whitespace-nowrap">
+            <span>Apply Now</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-backdrop" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-full max-w-xs h-full bg-white shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Logo" class="h-9 w-auto">
+        <span class="font-heading font-extrabold text-navy-900 text-lg">Pakistan School</span>
+      </div>
+      <button id="mobile-close-btn" class="p-2 text-slate-500 hover:text-slate-800"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <nav class="flex flex-col gap-2 mt-6 text-sm font-semibold text-slate-700">
+      <a href="index.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Home</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg bg-royal-50 text-royal-600 font-bold">About the School</a>
+      <a href="academics.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Academics</a>
+      <a href="admissions.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Admissions 2026</a>
+      <a href="facilities.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Campus Facilities</a>
+      <a href="faculty.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Faculty Directory</a>
+      <a href="student-life.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Student Life</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Photo Gallery</a>
+      <a href="news.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">News & Events</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg hover:bg-slate-50">Contact Us</a>
+    </nav>
+    <div class="pt-6 border-t border-slate-100">
+      <a href="admissions.html" class="btn-real btn-navy w-full text-center block">Apply for Admission</a>
+    </div>
+  </div>
+
+  <!-- Page Hero Banner -->
+  <section class="bg-navy-900 text-white py-16 lg:py-20 text-center border-b border-navy-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-skyBrand-300 text-xs font-bold uppercase tracking-wider">
+        Founded in 2026 • Aram Bagh, Karachi
+      </span>
+      <h1 class="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight">
+        Tradition of Values, Future of Innovation
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Discover the founding vision of Pakistan School: bridging high-caliber STEM education with enduring Islamic ethics in Karachi's historic educational quarter.
+      </p>
+    </div>
+  </section>
+
+  <!-- History & Campus Context -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-royal-50 text-royal-700 text-xs font-bold uppercase tracking-wider">
+            Our Heritage & Context
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+            Rooted in Karachi's Historic Center of Learning
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Established in 2026, <strong>Pakistan School</strong> was conceived by seasoned educators and community leaders to revitalize private schooling in downtown Karachi. Situated in Aram Bagh, adjacent to the towering Saima Trade Tower and steps away from Pakistan Chowk, the school occupies a neighborhood long celebrated for its literary and intellectual traditions.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            While contemporary urban sprawl has pushed many modern campuses to remote suburban borders, Pakistan School deliberately invested in a prime, central urban campus. This provides working parents throughout the I.I. Chundrigar Road corporate corridor and families residing across Saddar, Burns Road, and Old City with immediate access to a world-standard educational institution.
+          </p>
+        </div>
+        <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+          <img src="assets/images/campus-building-real.jpg" alt="Pakistan School Aram Bagh Campus" class="w-full h-[380px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent flex items-end p-6">
+            <span class="text-white text-xs font-bold bg-navy-900/90 px-3 py-1.5 rounded-lg border border-white/20">
+              Purpose-Built Downtown Campus • Est. 2026
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision, Mission & Philosophy Cards -->
+  <section class="py-20 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover-card space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-royal-50 text-royal-600 flex items-center justify-center">
+            <i data-lucide="eye" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-2xl text-navy-900">Our Vision</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            To be recognized as a benchmark institution in Pakistan where academic brilliance, technological curiosity, and moral integrity coalesce to produce empathetic global citizens.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover-card space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+            <i data-lucide="target" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-2xl text-navy-900">Our Mission</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            To provide safe, inquiry-driven, and individualized learning environments equipped with modern STEM laboratories, guided by experienced mentors and grounded in prophetic Islamic character.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover-card space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+            <i data-lucide="compass" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-extrabold text-2xl text-navy-900">Our Philosophy</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Every child possesses innate curiosity and distinct potential. We reject rote memorization in favor of diagnostic assessments, project-based inquiry, and holistic personality development.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+          Our Five Foundational Pillars
+        </h2>
+        <p class="text-slate-600 text-sm">The principles guiding every classroom lesson, assembly, and teacher interaction.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover-card">
+          <div class="w-10 h-10 rounded-full bg-royal-100 text-royal-700 flex items-center justify-center mx-auto mb-3 font-bold">1</div>
+          <h4 class="font-heading font-bold text-base text-navy-900">Integrity (Sidq)</h4>
+          <p class="text-xs text-slate-500 mt-2">Honesty in speech, scholarship, and everyday actions.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover-card">
+          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-3 font-bold">2</div>
+          <h4 class="font-heading font-bold text-base text-navy-900">Excellence (Ihsan)</h4>
+          <p class="text-xs text-slate-500 mt-2">Striving for perfection in academic inquiry and creative output.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover-card">
+          <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center mx-auto mb-3 font-bold">3</div>
+          <h4 class="font-heading font-bold text-base text-navy-900">Inquiry (Fikr)</h4>
+          <p class="text-xs text-slate-500 mt-2">Questioning deeply, experimenting actively, and solving real problems.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover-card">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center mx-auto mb-3 font-bold">4</div>
+          <h4 class="font-heading font-bold text-base text-navy-900">Empathy (Rahmah)</h4>
+          <p class="text-xs text-slate-500 mt-2">Compassion for peers, respect for diversity, and community service.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover-card">
+          <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center mx-auto mb-3 font-bold">5</div>
+          <h4 class="font-heading font-bold text-base text-navy-900">Leadership (Qiyadah)</h4>
+          <p class="text-xs text-slate-500 mt-2">Instilling confidence, articulate speech, and moral courage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Spotlight -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-royal-50 text-royal-700 text-xs font-bold uppercase tracking-wider">
+          Institutional Governance
+        </span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+          Guided by Visionary Academic Leadership
+        </h2>
+        <p class="text-slate-600 text-sm">
+          Fostering academic distinction, cutting-edge STEM literacy, and enduring Islamic character foundations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Principal Sir Muqeet -->
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col sm:flex-row gap-5 items-center hover-card">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=700&q=80" alt="Sir Muqeet" class="w-28 h-28 rounded-2xl object-cover shrink-0 border border-slate-200 shadow">
+          <div class="space-y-1 text-center sm:text-left">
+            <h3 class="font-heading font-extrabold text-lg text-navy-900">Sir Muqeet</h3>
+            <p class="text-xs text-royal-600 font-bold">Principal & Head of Institution</p>
+            <p class="text-xs text-slate-600 leading-relaxed pt-2">
+              Steering Pakistan School's strategic educational mission with focus on character, Cambridge rigor, and student wellbeing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Qari Nasir Sahab -->
+        <div class="rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm flex flex-col sm:flex-row gap-5 items-center hover-card">
+          <img src="assets/images/qari-nasir-half.jpg" alt="Qari Nasir Sahab" class="w-28 h-28 rounded-2xl object-cover object-top shrink-0 border border-emerald-300 shadow">
+          <div class="space-y-1 text-center sm:text-left">
+            <h3 class="font-heading font-extrabold text-lg text-navy-900">Qari Nasir Sahab</h3>
+            <p class="text-xs text-emerald-600 font-bold">Head of Tahfeez-ul-Quran & Tajweed</p>
+            <p class="text-xs text-slate-600 leading-relaxed pt-2">
+              Overseeing dual-track Quranic memorization, authentic Makharij articulation, and daily prophetic character formation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Logo" class="h-8 w-auto">
+        <span class="font-heading font-bold text-white text-sm">Pakistan School • Aram Bagh Campus, Karachi</span>
+      </div>
+      <div>© 2026 Pakistan School. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
